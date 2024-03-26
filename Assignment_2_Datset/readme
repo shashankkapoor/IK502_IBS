@@ -1,0 +1,10 @@
+There are 10 EEG recording files.
+All the recordings have 19 channels.
+The files are in .npy format and can be easily loaded with numpy.load() function.
+All .npy files have 19 rows and x number of columns, 19 represents the number of channels and x represents the number of sample points. x may vary across different recordings, and it is dependent on the duration of a particular recording.
+Sampling frequency is 100 Hz.
+
+
+Code to read data the data and convert it to numpy array format
+import numpy as np
+X = np.load(filename) # read the file and convert it to numpy array
